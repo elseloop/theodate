@@ -20,7 +20,7 @@ function nm_scripts() {
 
     // Load core stylesheets & scripts last, just in case they need to overwrite anything
     wp_enqueue_style( 'foundation', get_template_directory_uri().'/css/app.css' );
-    wp_enqueue_script( 'equality-scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), null, true );
+    wp_enqueue_script( 'theo-scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), null, true );
   
   }
 
