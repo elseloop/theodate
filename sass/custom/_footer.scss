@@ -1,0 +1,18 @@
+.site-footer {
+  @include clearfix();
+  padding: 2em 0;
+  height: auto;
+  width: 100%;
+  // just in case, since we're absolutely positioning it
+  // via jQuery when we fake the sticky footer
+  z-index: 1000;
+  opacity: 0;
+  margin-top: -1em;
+  
+  // fired by sticky footer with fallback for those sad fools without js
+  .loaded &,
+  .no-js & {
+    opacity: 1;
+  }
+
+}

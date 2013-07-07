@@ -1,0 +1,22 @@
+// global styles
+
+html,
+body,
+.fancy-wrap {
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: $secondary-color image-url("fuzz.png") repeat 0 0;
+}
+.fancy-wrap {
+  margin: 1em;
+  background-color: white;
+  border-radius: 4px;
+  @include box-shadow( 0 2px 8px fade-out( $body-font-color, .5 ) );
+}
+
+a {
+  @include single-transition(color);
+}

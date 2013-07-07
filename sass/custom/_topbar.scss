@@ -1,0 +1,50 @@
+// header nav
+.top-bar .name {
+  padding-top: 1em;
+  padding-left: $topbar-height / 3;
+
+  @media #{$topbar-media-query} {
+    padding-left: $column-gutter / 2;
+  }
+
+}
+.top-bar .name h1 .site-logo {
+  @include replace-text-with-dimensions( "theo-logo.png", center, center );
+}
+.top-bar-section {
+  @include clearfix;
+}
+.top-bar-section ul li {
+  clear: right;
+
+  a:not(.button) {
+    @include single-transition(color, .2s);
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    @media #{$topbar-media-query} {
+      line-height: 3;
+      padding: 0 1em;
+    }
+
+  }
+
+}
+.top-bar-section ul li:first-of-type {
+  @include clearfix;
+  float: right;
+}
+.top-bar-section .has-form {
+  padding-right: 1em;
+
+  input[type="submit"] {
+    @extend %screen-reader-text;
+  }
+
+  @media #{$topbar-media-query} {
+    height: $topbar-height/2;
+  }
+
+}
