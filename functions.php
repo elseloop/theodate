@@ -21,10 +21,4 @@ require_once locate_template( 'inc/comments.php'                      , true, tr
 require_once locate_template( 'inc/classes.php'                       , true, true );
 require_once locate_template( 'inc/helpers.php'                       , true, true );
 require_once locate_template( 'inc/services.php'                      , true, true );
-require_once locate_template( 'inc/shortcodes.php'                    , true, true );
-// journal specific stuff here
-require_once locate_template( 'inc/journal/journal-admin-page.php'    , true, true );
-require_once locate_template( 'inc/journal/lit-journal-functions.php' , true, true );
-
-// adds theme support for WooCommerce & some commonly needed hooks & filters
-// require_once locate_template( 'inc/woocommerce.php' );
+require_once locate_template( 'inc/shortcodes.php'                    , true, true ); // these are foundation specific from the starter; @todo pull out as plugin
