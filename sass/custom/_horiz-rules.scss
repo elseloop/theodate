@@ -1,0 +1,36 @@
+// <hr>
+
+.rule {
+    color: $hr-color;
+    border:none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin-bottom: 1em;
+}
+.rule--ornament {
+    position:relative;
+
+    &:after {
+        content:"\00A7";
+        position:absolute;
+        top:   0;
+        right: 0;
+        left:  0;
+        line-height:0;
+        text-align:center;
+        color: darken($hr-color, 20%);
+    }
+
+    /**
+    * Pass in an arbitrary ornament though a data attribute, e.g.:
+    *
+      <hr class="rule  rule--ornament" data-ornament="!">
+    *
+    */
+    &[data-ornament]:after {
+        content:attr(data-ornament);
+    }
+}
+.rule--spaced {
+  margin: 2em auto;
+}
