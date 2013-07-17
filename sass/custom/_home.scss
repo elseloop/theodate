@@ -1,0 +1,8 @@
+// homepage styles
+
+.current-issue-wrap,
+.widget-row {
+  @include clearfix;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
