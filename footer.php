@@ -15,11 +15,15 @@
 
     <footer class="site-footer">
       
-      <div class="row"><?php 
+      <div class="row">
+
+        <hr class="rule  rule--ornament rule--spaced" data-ornament="§"><?php      
+        
         dynamic_sidebar('Sidebar Footer One');
         dynamic_sidebar('Sidebar Footer Two');
         dynamic_sidebar('Sidebar Footer Three');
         dynamic_sidebar('Sidebar Footer Four');
+
       ?></div>
       
     </footer>
