@@ -1,0 +1,16 @@
+// single issue view
+
+.issue-toc {
+  @include clearfix;
+
+  > .poem-title {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+  > .poem-author {
+    float: left;
+    width: 50%;
+  }
+
+}
